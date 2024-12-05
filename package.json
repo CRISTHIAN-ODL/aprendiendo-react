@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "standard": "17.1.2"
+  },
+  "eslintConfig": {
+    "extends":[
+      "standard"
+    ]
+  }
 }

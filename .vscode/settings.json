@@ -1,0 +1,30 @@
+{
+    "editor.cursorBlinking": "expand",
+    "editor.linkedEditing": true,
+    "editor.guides.bracketPairs": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": [],
+    "workbench.editorAssociations": {
+        "*.keras": "default"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "jupyter.askForKernelRestart": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "tabnine.experimentalAutoImports": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.problems.shortenToSingleLine": true,
+    "eslint.execArgv": null,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}
