@@ -1,22 +1,25 @@
-import { WINNER_COMBOS } from '../constants'
-export const checkWinnerForm = (boardToCheck) => {
-  // revisamos todas las cobinaciones ganadoras
-  // si es X o es O el que ganó
+import { WINNER_COMBOS } from '../constants.js'
+
+export const checkWinnerFrom = (boardToCheck) => {
+  // revisamos todas las combinaciones ganadoras
+  // para ver si X u O ganó
   for (const combo of WINNER_COMBOS) {
     const [a, b, c] = combo
     if (
       boardToCheck[a] &&
-        boardToCheck[a] === boardToCheck[b] &&
-        boardToCheck[a] === boardToCheck[c]
+      boardToCheck[a] === boardToCheck[b] &&
+      boardToCheck[a] === boardToCheck[c]
     ) {
       return boardToCheck[a]
     }
   }
-  // si no ha ganado nadie
+  // si no hay ganador
   return null
 }
 
 export const checkEndGame = (newBoard) => {
-  // si todas las posiciones del array newBoard tienen que el square son diferentes a null a terminado el juego
-  return newBoard.every((Square) => Square !== null)
+  // revisamos si hay un empate
+  // si no hay más espacios vacíos
+  // en el tablero
+  return newBoard.every((square) => square !== null)
 }

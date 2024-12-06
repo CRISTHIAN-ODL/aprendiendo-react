@@ -1,4 +1,4 @@
-export const TURNS = {
+export const TURNS = { // turnos
   X: '❌',
   O: '⚪'
 }
